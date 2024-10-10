@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'SF-PRO-Text';
+    src: url('Жалкая пародия/fonts/SF-PRO-Text/SFProText-Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.container{
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header__up-wrap{
+    display: flex;
+    /* gap: 16px; */
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0 12px 0;
+}
+
+    .header__up-adress{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        font-family: 'SF-PRO-Text', sans-serif;
+        
+    }
+
+        .header__up-adress-street{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .header__up-adress-metro{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+    .header__up-number{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        color: inherit;
+        font-family: 'SF-PRO-Text', sans-serif;
+        & a:visited{
+            color: inherit;
+        }
+    }
+
+        .header__up-number-wrap{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+        }
+
+    .header__up-schedule{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        font-family: 'SF-PRO-Text', sans-serif;
+    }
+
+    .days_off{
+        position: relative;
+        padding-left: 6px;
+    }
+
+    .days_off::before{
+        left: 0;
+        content: "";
+        position: absolute;
+        height: 100%;
+        border: 1px solid rgb(140, 145, 150);
+    }
+
+    .header__up-button{
+        color: #2c6ecb;
+        font-family: 'SF-PRO-Text', sans-serif;
+        background-color: rgb(246, 246, 247);
+    }
+
+    .header__bottom{
+        padding: 8px 0;
+        background: rgb(0, 160, 172);
+    }
+    
+        .header__bottom-wrap{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* gap: 10px; */
+        }
+    
+            .header__logo{
+                flex: 0 0 178px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                position: relative;
+                z-index: 1;
+            }
+    
+            .header__logo-text{
+                color: white;
+                font-family: "SF-PRO-Text", sans-serif;
+                text-transform: uppercase;
+            }
+    
+            .header__bottom-basket{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 4px;
+                color: rgb(32, 34, 35);
+                font-family: 'SF-PRO-Text', sans-serif;
+                background-color: #ffffff;
+                border-radius: 4px;
+                border: 2px solid rgb(187, 191, 195);
+                padding: 4px 8px 4px 6px;
+            }
+    
+            .header__bottom-basket-value{
+                color: rgb(32, 34, 35);
+                font-family: 'SF-PRO-Text', sans-serif;
+            }
+
+            .header__bottom-nav{
+                
+                /* display: flex;
+                align-items: center; */
+            }
+
+            .header__bottom-nav-list{
+                flex-wrap: wrap;
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                /* margin: 0 41px; */
+            }
+    
+            .header__bottom-nav-item{
+                & a {
+                    color: var(--Text-On-Interactive, #fff);
+                    font-feature-settings: "clig" off, "liga" off;
+                    font-family: "SF-PRO-Text", sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 20px;
+    
+                    &:hover {
+                        border-bottom: 1px solid white;
+                    }
+                }
+            }
+
+            .header__bottom-search{
+                display: flex;
+                flex-wrap: wrap;
+                background-color: white;
+                border: 2px solid rgb(187, 191, 195);
+                border-radius: 4px;
+                align-items: center;
+                padding: 4px 6px;
+                position: relative;
+                flex: 0 1 500px;
+
+                & input{
+                    width: 100%;
+                    font-family: 'SF-PRO-Text', sans-serif;
+                    &::placegolder{
+                        font-family: 'SF-PRO-Text', sans-serif;
+                    }
+
+                }
+            }
+
+            .header__bottom-search-interactive{
+                display: flex;
+                gap: 8px;
+            }
+
+
